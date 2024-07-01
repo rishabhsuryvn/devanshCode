@@ -98,8 +98,9 @@ const RecorderComponent: React.FC<RecorderComponentProps> = ({ onRecordingComple
   return (
     <div className="w-full max-w-md mx-auto">
       <div className="grid gap-6">
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-6">
           {!recording ? (
+            
             <Button size="icon" variant="ghost" className="text-primary" onClick={startRecording}>
               Start Recording
             </Button>
@@ -108,6 +109,8 @@ const RecorderComponent: React.FC<RecorderComponentProps> = ({ onRecordingComple
               Stop Recording
             </Button>
           )}
+          <div className='ml-5'>
+
           {audioUrl && (
             <>
               <Button size="icon" variant="ghost" className="text-green-500" onClick={playAudio}>
@@ -118,6 +121,7 @@ const RecorderComponent: React.FC<RecorderComponentProps> = ({ onRecordingComple
               </Button>
             </>
           )}
+          </div>
         </div>
         <div className="flex items-center justify-center">
           <div className="text-sm text-muted-foreground">
