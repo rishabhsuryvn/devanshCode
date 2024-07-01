@@ -26,7 +26,7 @@ function page() {
           Don't worry we'll implement this soon 
         </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-        Trust us
+        😤
         </div>
       </motion.div>
     </AuroraBackground>
